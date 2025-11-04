@@ -26,19 +26,22 @@
     h1 {
       font-size: 4rem;
       background: linear-gradient(90deg, #ff006e, #8338ec, #3a86ff, #00f5d4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      animation: glow 4s ease-in-out infinite alternate;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+
     }
 
-    h2 {
-      font-size: 2.8rem;
-      margin-top: 10px;
-      background: linear-gradient(90deg, #ff006e, #8338ec, #3a86ff, #00f5d4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
+   h2 {
+  font-size: 2.8rem;
+  margin-top: 10px;
+  background: linear-gradient(90deg, #ff006e, #8338ec, #3a86ff, #00f5d4);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
     @keyframes glow {
       from { text-shadow: 0 0 10px #ff00c8, 0 0 20px #8338ec; }
       to { text-shadow: 0 0 20px #00f5d4, 0 0 40px #3a86ff; }

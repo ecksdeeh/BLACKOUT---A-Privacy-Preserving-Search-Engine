@@ -2,11 +2,23 @@ from fastapi import FastAPI, Query
 from dotenv import load_dotenv
 from serpapi import GoogleSearch
 import random, os
+from fastapi.middleware.cors import CORSMiddleware
 
 # Load environment variables
 load_dotenv()
 
 app = FastAPI(title="Private Search Engine API", description="Privacy-preserving search using SerpAPI and decoy queries")
+
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # allow all origins (safe for dev)
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 SERPAPI_KEY = os.getenv("SERPAPI_KEY")
 
