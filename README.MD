@@ -1,0 +1,1 @@
+BLACKOUT is a search engine we designed to prioritize safe, private searching through the vast internet. Cybersecurity is a growing concern in our society as cyber attacks are growing in frequency as technology continues to rapidly evolve. This search engine makes sure what you're searching remains safe and private from any prying eyes.
